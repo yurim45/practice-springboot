@@ -1,0 +1,17 @@
+server:
+  port: 8080 # 서버 포트 설정
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      format_sql: true
+      ddl-auto: update
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 1234
