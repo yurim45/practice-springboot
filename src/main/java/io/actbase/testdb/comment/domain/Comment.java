@@ -21,4 +21,6 @@ public class Comment {
     @Id
     @Column(name = "id")
     private String id;
+
+
 }
