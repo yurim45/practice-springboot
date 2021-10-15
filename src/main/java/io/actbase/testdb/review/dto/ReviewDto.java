@@ -38,13 +38,13 @@ public class ReviewDto {
         @ApiModelProperty(value = "score", example = "score", required = false, position = 7)
         private String score;
 
-        @ApiModelProperty(value = "title", example = "title", required = false, position = 7)
+        @ApiModelProperty(value = "title", example = "title", required = false, position = 8)
         private String title;
 
-        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 8)
+        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 9)
         private int commentCount;
 
-        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 9)
+        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 10)
         private int likeCount;
 
 
@@ -80,13 +80,13 @@ public class ReviewDto {
         @ApiModelProperty(value = "score", example = "score", required = false, position = 7)
         private String score;
 
-        @ApiModelProperty(value = "title", example = "title", required = false, position = 7)
+        @ApiModelProperty(value = "title", example = "title", required = false, position = 8)
         private String title;
 
-        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 8)
+        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 9)
         private int commentCount;
 
-        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 9)
+        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 10)
         private int likeCount;
     }
 

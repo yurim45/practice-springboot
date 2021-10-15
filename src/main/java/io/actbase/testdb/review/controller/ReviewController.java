@@ -26,7 +26,7 @@ public class ReviewController {
 
     @ApiOperation(value = "Review 조회")
     @GetMapping
-    ResponseEntity getReviews(
+    ResponseEntity getReview(
             @PageableDefault(sort = "id", direction = Sort.Direction.DESC) Pageable pageable
     ) {
         Page<ReviewDto.Response> page = reviewService.getReviews(pageable);
