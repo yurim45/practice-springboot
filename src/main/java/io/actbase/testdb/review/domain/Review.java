@@ -15,20 +15,38 @@ public class Review {
     @Column(unique = true, nullable = false)
     private Long id;
 
-    @Column(name = "type")
-    private String type;
-
     @Column(name = "reviewId")
     private int reviewId;
 
-    @Column(name = "profilePic")
-    private String profilePic;
+    @Column(name = "type")
+    private String type;
+
+    @Column(name = "threadType")
+    private String threadType;
+
+    @Column(name = "withImage")
+    private boolean withImage;
+
+    @Column(name = "userProfile")
+    private String userProfile;
+
+    @Column(name = "snsIcons")
+    private String snsIcons;
+
+    @Column(name = "hashTags")
+    private String hashTags;
+
+    @Column(name = "userHashTags")
+    private String userHashTags;
 
     @Column(name = "userName")
     private String userName;
 
-    @Column(name = "time")
-    private LocalDateTime time;
+    @Column(name = "createdAt")
+    private LocalDateTime createdAt;
+
+    @Column(name = "reviewDescription")
+    private String reviewDescription;
 
     @Column(name = "reviewImage")
     private String reviewImage;
@@ -36,8 +54,8 @@ public class Review {
     @Column(name = "score")
     private String score;
 
-    @Column(name = "title")
-    private String title;
+    @Column(name = "reviewTitle")
+    private String reviewTitle;
 
     @Column(name = "commentCount")
     private int commentCount;
@@ -45,38 +63,10 @@ public class Review {
     @Column(name = "likeCount")
     private int likeCount;
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(unique = true, nullable = false)
-//    private Long id;
-//
-//    @Column(name = "type")
-//    private String type;
-//
-//    @Column(name = "reviewId")
-//    private String reviewId;
-//
-//    @Column(name = "profilePic")
-//    private String profilePic;
-//
-//    @Column(name = "userName")
-//    private String userName;
-//
-//    @Column(name = "time")
-//    private LocalDateTime time;
-//
-//    @Column(name = "reviewImage")
-//    private String reviewImage;
-//
-//    @Column(name = "score")
-//    private String score;
-//
-//    @Column(name = "title")
-//    private String title;
-//
-//    @Column(name = "commentCount")
-//    private String commentCount;
-//
-//    @Column(name = "likeCount")
-//    private String likeCount;
+    @Column(name = "runningTime")
+    private int runningTime;
+
+
 }
+
+

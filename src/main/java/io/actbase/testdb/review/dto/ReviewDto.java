@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
+
 public class ReviewDto {
     @Setter
     @Getter
@@ -17,37 +18,56 @@ public class ReviewDto {
         @ApiModelProperty(value = "id", example = "1")
         private Long id;
 
-        @ApiModelProperty(value = "type", example = "type", required = false, position = 1)
-        private String type;
-
         @ApiModelProperty(value = "reviewId", example = "1", required = false, position = 2)
         private int reviewId;
 
-        @ApiModelProperty(value = "userName", example = "userName", required = false, position = 3)
+        @ApiModelProperty(value = "type", example = "best", required = false, position = 3)
+        private String type;
+
+        @ApiModelProperty(value = "threadType", example = "MY_THREAD", required = false, position = 4)
+        private String threadType;
+
+        @ApiModelProperty(value = "withImage", example = "true", required = false, position = 5)
+        private boolean withImage;
+
+        @ApiModelProperty(value = "userProfile", example = "", required = false, position = 6)
+        private String userProfile;
+
+        @ApiModelProperty(value = "snsIcons", example = "", required = false, position = 7)
+        private String snsIcons;
+
+        @ApiModelProperty(value = "hashTags", example = "", required = false, position = 8)
+        private String hashTags;
+
+        @ApiModelProperty(value = "userHashTags", example = "", required = false, position = 9)
+        private String userHashTags;
+
+        @ApiModelProperty(value = "userName", example = "userName", required = false, position = 10)
         private String userName;
 
-        @ApiModelProperty(value = "profilePic", example = "profilePic", required = false, position = 4)
-        private String profilePic;
+        @ApiModelProperty(value = "createdAt", example = "", required = false, position = 11)
+        private String createdAt;
 
-        @ApiModelProperty(value = "time", example = "YYYY-MM-DD", required = false, position = 5)
-        private String time;
+        @ApiModelProperty(value = "reviewDescription", example = "reviewDescription", required = false, position = 12)
+        private String reviewDescription;
 
-        @ApiModelProperty(value = "reviewImage", example = "reviewImage", required = false, position = 6)
+        @ApiModelProperty(value = "reviewImage", example = "reviewImage", required = false, position = 13)
         private String reviewImage;
 
-        @ApiModelProperty(value = "score", example = "score", required = false, position = 7)
+        @ApiModelProperty(value = "score", example = "score", required = false, position = 14)
         private String score;
 
-        @ApiModelProperty(value = "title", example = "title", required = false, position = 8)
-        private String title;
+        @ApiModelProperty(value = "reviewTitle", example = "reviewTitle", required = false, position = 15)
+        private String reviewTitle;
 
-        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 9)
+        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 16)
         private int commentCount;
 
-        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 10)
+        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 17)
         private int likeCount;
 
-
+        @ApiModelProperty(value = "runningTime", example = "1", required = false, position = 18)
+        private int runningTime;
     }
 
     @Setter
@@ -59,36 +79,61 @@ public class ReviewDto {
     @ApiModel(value = "ReviewDto.Create")
     public static class Create {
 
-        @ApiModelProperty(value = "type", example = "type", required = false, position = 1)
-        private String type;
-
-        @ApiModelProperty(value = "reviewId", example = "1", required = false, position = 2)
+        @ApiModelProperty(value = "reviewId", example = "1", required = false, position = 1)
         private int reviewId;
 
-        @ApiModelProperty(value = "userName", example = "userName", required = false, position = 3)
+        @ApiModelProperty(value = "type", example = "best", required = false, position = 2)
+        private String type;
+
+        @ApiModelProperty(value = "threadType", example = "MY_THREAD", required = false, position = 3)
+        private String threadType;
+
+        @ApiModelProperty(value = "withImage", example = "true", required = false, position = 4)
+        private boolean withImage;
+
+        @ApiModelProperty(value = "userProfile", example = "", required = false, position = 5)
+        private String userProfile;
+
+        @ApiModelProperty(value = "snsIcons", example = "", required = false, position = 6)
+        private String snsIcons;
+
+        @ApiModelProperty(value = "hashTags", example = "", required = false, position = 7)
+        private String hashTags;
+
+        @ApiModelProperty(value = "userHashTags", example ="", required = false, position = 8)
+        private String userHashTags;
+
+        @ApiModelProperty(value = "userName", example = "userName", required = false, position = 9)
         private String userName;
 
-        @ApiModelProperty(value = "profilePic", example = "profilePic", required = false, position = 4)
-        private String profilePic;
+        @ApiModelProperty(value = "createdAt", example = "", required = false, position = 10)
+        private String createdAt;
 
-        @ApiModelProperty(value = "time", example = "YYYY-MM-DD", required = false, position = 5)
-        private String time;
+        @ApiModelProperty(value = "reviewDescription", example = "reviewDescription", required = false, position = 11)
+        private String reviewDescription;
 
-        @ApiModelProperty(value = "reviewImage", example = "reviewImage", required = false, position = 6)
+        @ApiModelProperty(value = "reviewImage", example = "reviewImage", required = false, position = 12)
         private String reviewImage;
 
-        @ApiModelProperty(value = "score", example = "score", required = false, position = 7)
+        @ApiModelProperty(value = "score", example = "score", required = false, position = 13)
         private String score;
 
-        @ApiModelProperty(value = "title", example = "title", required = false, position = 8)
-        private String title;
+        @ApiModelProperty(value = "reviewTitle", example = "reviewTitle", required = false, position = 14)
+        private String reviewTitle;
 
-        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 9)
+        @ApiModelProperty(value = "commentCount", example = "1", required = false, position = 15)
         private int commentCount;
 
-        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 10)
+        @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 16)
         private int likeCount;
+
+        @ApiModelProperty(value = "runningTime", example = "1", required = false, position = 17)
+        private int runningTime;
+
+       
     }
 
-    }
+
+
+}
 
