@@ -38,6 +38,9 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	implementation 'io.springfox:springfox-bean-validators:2.9.2'
 	implementation('org.modelmapper:modelmapper:2.3.0')
+
+	implementation 'com.google.guava:guava:27.0.1-jre'
+	implementation 'org.apache.commons:commons-lang3:3.8.1'
 }
 
 test {

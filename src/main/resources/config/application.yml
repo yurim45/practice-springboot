@@ -15,3 +15,46 @@ spring:
     url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 1234
+
+---
+spring:
+  profiles: local # local profile
+  datasource:
+    url:
+    username: reviewpot
+    password: 1234
+  jpa:
+    show-sql: true  # JPA Sql log 여부.
+    database-platform: org.hibernate.dialect.MySQL8Dialect  # Database platform.
+    hibernate:
+      ddl-auto: update  # Database DDL 실행 동작 설정.
+    properties:
+      hibernate:
+        format_sql: true  # JPA Sql log format 설정.
+
+app:
+  host: localhost:8080 # 앱에서 사용할 프로퍼티 설정.
+  url: http://${app.host} # 앱에서 사용할 프로퍼티 설정.
+  aws:
+    end-point: Users/actbase/Documents/Github/happytoseeyou/files # https://kr.object.ncloudstorage.com
+    region-name: kr-standard
+#    access-key: 7nKISRJcfKmjsIw8m7bK
+#    secret-key: Ae3l62d67PkZ5pqAxl6JqMeC0atqkSWNYF9907zv
+    bucket-name: reviewpot-stage
+    cdn-thumb-url: # https://fdjeqzmbqrhp6294163.cdn.ntruss.com/files
+    cdn-origin-url: # https://iphmihsabdvg6294166.cdn.ntruss.com
+
+iamport:
+  apiKey: # 1929737208264090
+  apiSecret: # RTfNmurvrIvd7hqd5HQzLMC5wyISu0MlT29gwBMXjhbrzBEEjve4hRaOpSHTSufMwo23ZP1j6cLGOql7
+
+storage:
+  location: ~/Documents/Github/files # 파일이 저장될 기본 경로 지정
+
+# 로그레벨 설정.
+logging:
+  level:
+    io.actbase.testdb: DEBUG
+    org.springframework.security.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
