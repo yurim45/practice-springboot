@@ -4,7 +4,6 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
-
 public class ReviewDto {
     @Setter
     @Getter
@@ -66,7 +65,7 @@ public class ReviewDto {
         @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 17)
         private int likeCount;
 
-        @ApiModelProperty(value = "runningTime", example = "1", required = false, position = 18)
+        @ApiModelProperty(value = "runningTime", example = "100", required = false, position = 18)
         private int runningTime;
     }
 
@@ -127,13 +126,10 @@ public class ReviewDto {
         @ApiModelProperty(value = "likeCount", example = "1", required = false, position = 16)
         private int likeCount;
 
-        @ApiModelProperty(value = "runningTime", example = "1", required = false, position = 17)
+        @ApiModelProperty(value = "runningTime", example = "100", required = false, position = 17)
         private int runningTime;
 
-       
     }
-
-
 
 }
 

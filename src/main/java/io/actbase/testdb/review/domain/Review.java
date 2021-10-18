@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -43,7 +42,7 @@ public class Review {
     private String userName;
 
     @Column(name = "createdAt")
-    private LocalDateTime createdAt;
+    private String createdAt;
 
     @Column(name = "reviewDescription")
     private String reviewDescription;
