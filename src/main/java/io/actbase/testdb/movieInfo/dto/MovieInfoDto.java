@@ -32,7 +32,7 @@ public class MovieInfoDto {
         @ApiModelProperty(value = "releaseAt", example = "2021", required = false, position = 6)
         private String releaseAt;
 
-        @ApiModelProperty(value = "availableOn", example = "[]", required = false, position = 7)
+        @ApiModelProperty(value = "availableOn", example = "", required = false, position = 7)
         private String availableOn;
 
         @ApiModelProperty(value = "score", example = "4.5", required = false, position = 8)
@@ -69,7 +69,7 @@ public class MovieInfoDto {
         @ApiModelProperty(value = "releaseAt", example = "2021", required = false, position = 5)
         private String releaseAt;
 
-        @ApiModelProperty(value = "availableOn", example = "[]", required = false, position = 6)
+        @ApiModelProperty(value = "availableOn", example = "", required = false, position = 6)
         private String availableOn;
 
         @ApiModelProperty(value = "score", example = "4.5", required = false, position = 7)
