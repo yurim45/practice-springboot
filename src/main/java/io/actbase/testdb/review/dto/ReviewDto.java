@@ -4,6 +4,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 public class ReviewDto {
     @Setter
     @Getter
@@ -45,7 +47,7 @@ public class ReviewDto {
         private String userName;
 
         @ApiModelProperty(value = "createdAt", example = "", required = false, position = 11)
-        private String createdAt;
+        private LocalDateTime createdAt;
 
         @ApiModelProperty(value = "reviewDescription", example = "reviewDescription", required = false, position = 12)
         private String reviewDescription;
@@ -106,7 +108,7 @@ public class ReviewDto {
         private String userName;
 
         @ApiModelProperty(value = "createdAt", example = "", required = false, position = 10)
-        private String createdAt;
+        private LocalDateTime createdAt;
 
         @ApiModelProperty(value = "reviewDescription", example = "reviewDescription", required = false, position = 11)
         private String reviewDescription;
